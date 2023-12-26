@@ -1,0 +1,97 @@
+<!--Ethan Edouard
+    Portfolio Website
+    8/9/2023
+-->
+
+<!DOCTYPE html>
+<html lang="en US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethan Edouard</title>
+    <link rel="stylesheet" href="portfolioWebsiteStyle.css"></link>
+    <link rel="stylesheet" href="mediaQueries.css"></link>
+</head>
+<body>
+
+<div class="header">
+    <nav id="desktop-nav">
+    <a class="logo" href="ethanEdouardPortfolioWebsite.html">Ethan Edouard</a>
+    <div>
+        <ul class="nav-links">
+            <li><a href="EEprojects.html">Projects</a></li>
+            <li><a href="EEabout.html">About</a></li>
+            <li><a href="EEcontact.html">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+<nav id="hamburger-nav">
+    <a class="logo" href="ethanEdouardPortfolioWebsite.html">Ethan Edouard</a>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="EEprojects.html" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="EEabout.html" onclick="toggleMenu()">About</a></li>
+            <li><a href="EEcontact.html" onclick="toggleMenu()">Contact</a></li>
+        </div>
+    </div>
+</nav>
+
+<div class="marquee">
+    <div class="marquee__group">
+        <span> Aspiring Software Engineer </span>
+        <span>·</span>
+        <span> Aspiring Software Engineer </span>
+        <span>·</span>
+        <span> Aspiring Software Engineer </span>
+        <span>·</span>
+    </div>
+    <div class="marquee__group" aria-hidden="true">
+        <span> Aspiring Software Engineer </span>
+        <span>·</span>
+        <span> Asipring Software Engineer </span>
+        <span>·</span>
+        <span> Asipring Software Engineer </span>
+        <span>·</span>
+    </div>
+</div>
+
+<div class="marquee-two">
+    <div class="marquee__group-two">
+        <span> Based In Arizona </span>
+        <span>·</span>
+        <span> Based In Arizona </span>
+        <span>·</span>
+        <span> Based In Arizona </span>
+        <span>·</span>
+        
+    </div>
+    <div class="marquee__group-two" aria-hidden="true">
+        <span> Based In Arizona </span>
+        <span>·</span>
+        <span> Based In Arizona </span>
+        <span>·</span>
+        <span> Based In Arizona </span>
+        <span>·</span>
+    </div>
+</div>
+
+<footer>
+    <ul class="social-icons">
+        <li><a href="mailto:edouardethan@gmail.com"><ion-icon name="mail-outline"></ion-icon></a></li>
+        <li><a href="https://www.linkedin.com/in/ethan-edouard-978384274/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+        <li><a href="https://github.com/ethanxedouard" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
+    </ul>
+</footer>
+
+</div>
+<script src="portfolioWebsite.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!--Ethan Edouard
+    Portfolio Website
+    8/9/2023
+-->
+
+<!DOCTYPE html>
+<html lang="en US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethan Edouard</title>
+    <link rel="stylesheet" href="portfolioWebsiteStyle.css"></link>
+    <link rel="stylesheet" href="contactStyle.css"></link>
+    <link rel="stylesheet" href="mediaQueries.css"></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <nav id="desktop-nav">
+        <a class="logo" href="ethanEdouardPortfolioWebsite.html">Ethan Edouard</a>
+        <div>
+            <ul class="nav-links">
+                <li><a href="EEprojects.html">Projects</a></li>
+                <li><a href="EEabout.html">About</a></li>
+                <li><a href="EEcontact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <a class="logo" href="ethanEdouardPortfolioWebsite.html">Ethan Edouard</a>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="EEprojects.html" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="EEabout.html" onclick="toggleMenu()">About</a></li>
+                <li><a href="EEcontact.html" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <img src="MenacingUnfitBeagle-size_restricted.gif" alt="Beagle" />
+            </div>
+            <div class="column">
+                <form class="form">
+                    <input name="from_name" type="text" class="feedback-input" placeholder="Name" />
+                    <input name="email" type="text" class="feedback-input" placeholder="Email" />
+                    <textarea name="message" class="feedback-input" placeholder="Message"></textarea>
+                    <input type="submit" value="SUBMIT" />
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+        </div>
+        
+        <div class="contact-section">
+            <h2>Let's Connect</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <a href="mailto:example@gmail.com">Email: edouardethan@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    Phone: +1 602-849-2863
+                </div>
+                <div class="contact-item">
+                    <a href="https://www.facebook.com/profile.php?id=100094379086040" target="_blank">Facebook</a> | <a href="https://twitter.com/edouard_ethan" target="_blank">Twitter</a> | <a href="https://www.instagram.com/2.07.06/" target="_blank">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </div>    
+    
+    
+    <footer>
+        <ul class="social-icons">
+            <li><a href="mailto:edouardethan@gmail.com"><ion-icon name="mail-outline"></ion-icon></a></li>
+            <li><a href="https://www.linkedin.com/in/ethan-edouard-978384274/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            <li><a href="https://github.com/ethanxedouard" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
+        </ul>
+    </footer>
+    
+    
+    <script src="contact.js"></script>
+    <script src="portfolioWebsite.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+    </html>

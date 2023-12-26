@@ -1,0 +1,290 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair:opsz,wght@5..1200,300;5..1200,400;5..1200,500;5..1200,600;5..1200,700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  text-align: center;
+ /*  background-image: url(https://blackculturetv.files.wordpress.com/2020/03/0wvqi6qybv-kb9exltgk1_zw_vnqh0fvmzpcxopgpvg.jpg?w=1200);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%; */
+}
+
+body {
+  font-family: 'Playfair', serif;
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: rgb(255, 255, 255);
+}
+
+.logo:hover{
+  text-decoration: none;
+}
+
+a,
+.btn {
+  transition: all 300ms ease;
+}
+
+nav,
+.nav-links {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+  color: white;
+}
+
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-decoration-color: white;
+}
+
+a:hover {
+  color: rgb(112, 112, 112);
+  text-decoration: line-through;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+#hamburger-nav {
+  display: none;
+}
+
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.hamburger-icon span {
+  width: 100%;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3 ease-in-out;
+  color: white;
+}
+
+.menu-links a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links li {
+  list-style: none;
+}
+
+.menu-links.open {
+  max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+.hamburger-icon span:first-child {
+  opacity: 1;
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+header {
+  background-color: #222;
+  color: #000000;
+  padding: 10px 0;
+}
+
+nav {
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project {
+  margin-bottom: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.project img {
+  max-width: 100%;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.project h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  animation: flicker 0.5s 3 alternate;
+}
+
+
+.project p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+  animation: flicker .5s 3 alternate;
+}
+
+.project a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.project a:hover {
+  background-color: #000000;
+  color: white;
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+@keyframes flicker {
+  0% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
+}
+
+footer {
+  padding: 20px;
+  padding-top: 150px;
+  text-align: center;
+}
+
+.social-icons {
+  list-style: none;
+  padding: 0;
+  display: flex; 
+  justify-content: center; 
+}
+
+.social-icons a ion-icon {
+  font-size: 36px;
+  transition: font-size 0.3s;
+  margin: 20px;
+}
+
+.social-icons li {
+  margin-right: 15px;
+}
+
+.social-icons a:hover ion-icon {
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+  0%, 100% {
+      transform: translateX(0);
+  }
+  25%, 75% {
+      transform: translateX(-5px);
+  }
+  50% {
+      transform: translateX(5px);
+  }
+}
+
+@media (max-width: 768px) {
+  .social-icons {
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .social-icons li {
+      margin-right: 0;
+      margin-bottom: 10px;
+      
+  }
+}
+
+img{
+  height: 350px;
+  width: auto;
+}
+

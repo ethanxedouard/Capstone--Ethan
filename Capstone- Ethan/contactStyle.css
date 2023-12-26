@@ -1,0 +1,109 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair:opsz,wght@5..1200,300;5..1200,400;5..1200,500;5..1200,600;5..1200,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Playfair', serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px; /* Add some spacing between columns */
+}
+
+.column {
+  flex: 50%;
+  padding: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.form {
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-input {
+  color: white;
+  font-family: 'Playfair', serif;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+.feedback-input:focus {
+  border-color: #3498db;
+}
+
+.feedback-input::placeholder {
+  color: #888;
+}
+
+input[type="submit"] {
+  width: 100%;
+  font-family: 'Playfair', serif;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+h2{
+  text-align: center;
+  text-decoration: underline;
+  font-size: 30px;
+}
+.contact-section {
+  margin-top: 40px;
+  padding: 20px 0;
+}
+
+.contact-info {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-item {
+  margin: 10px;
+}
+
+.contact-item a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.contact-item a:hover {
+  color: #3498db;
+}

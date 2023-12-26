@@ -1,0 +1,122 @@
+<!--Ethan Edouard
+    Portfolio Website
+    8/9/2023
+-->
+
+<!DOCTYPE html>
+<html lang="en US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethan Edouard</title>
+    <link rel="stylesheet" href="aboutstyle.css"></link>
+    <link rel="stylesheet" href="mediaQueries.css"></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+<div class="header">
+    <nav id="desktop-nav">
+    <a class="logo" href="ethanEdouardPortfolioWebsite.html">Ethan Edouard</a>
+    <div>
+        <ul class="nav-links">
+            <li><a href="EEprojects.html">Projects</a></li>
+            <li><a href="EEabout.html">About</a></li>
+            <li><a href="EEcontact.html">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+<nav id="hamburger-nav">
+    <a class="logo" href="ethanEdouardPortfolioWebsite.html">Ethan Edouard</a>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="EEprojects.html" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="EEabout.html" onclick="toggleMenu()">About</a></li>
+            <li><a href="EEcontact.html" onclick="toggleMenu()">Contact</a></li>
+        </div>
+    </div>
+</nav>
+
+<section class="hero" id="about">
+    <img src="unnamed.jpg"alt="Picture of me"class="hero-img"/>
+    <div class="bio animate__animated animate__flash">
+      <h2 class="bio-title">Hi I am Ethan Edouard</h2>
+      <p class="bio-text">
+        I am 17 years old. I'm a senior at Eduprize Highschool in Gilbert, Arizona. I attend EVIT for Software and App Design. I currently work at Cane's and I am a aspiring Software Engineer. When I am not coding i'm playing basketball. 
+      </p>
+    </div>
+</section>
+
+<section class="skills" id="skills">
+    <h2 class="skill-header">My Top Skills</h2>
+
+    <div class="skills-wrapper">
+      <div class="first-set animate__animated animate__pulse">
+        <img
+          src="HTML5_logo_and_wordmark.svg.png"
+          alt="Html"
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="CSS3_logo.svg.png"
+          alt="Css"
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="png-javascript-badge-picture-8.png"
+          alt="Javascript"
+          loading="lazy"
+          class="icon icon-card"
+        />
+      </div>
+
+      <div class="second-set animate__animated animate__pulse">
+        <img
+          src="Python-logo-notext.svg.png"
+          alt="Python"
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="1_A_Hg7NPIoARg0RmdsVapqg.png"
+          alt="C#"
+          loading="lazy"
+          class="icon icon-card"
+        />
+        
+      </div>
+    </div>
+  </section>
+
+  <section class="experience">
+    <div class="education">
+      <h3>Education</h3>
+      <h4>Casteel High School</h4>
+      <p>August 2020 - May 2021</p>
+    </div>
+    <div class="certifications">
+      <h3>Certifications</h3>
+      <h4>IT Specialist Python</h4>
+      <p>2023</p>
+      <h4>IT Specialist Javascript</h4>
+      <p>2023</p>
+      <h4>IT Specialist Html/Css</h4>
+      <p>2023</p>
+    </div>
+    <div class="work-experience">
+      <h3>Work Experience</h3>
+      <h4>Raising Cane's Chicken Fingers</h4>
+      <p>April 2022 - Present</p>
+    </div>
+  </section>
+</nav>
+</div>
+<script src="portfolioWebsite.js"></script>
+</body>
